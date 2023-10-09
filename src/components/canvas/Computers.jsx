@@ -5,7 +5,7 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("src/public/desktop_pc/ja.gltf");
+  const computer = useGLTF("./desktop_pc/ja.gltf");
 
   return (
     <mesh>
@@ -57,7 +57,7 @@ const ComputersCanvas = () => {
     <Canvas
       frameloop="demand"
       shadows
-      // dpr={[1, 2]}
+      dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
